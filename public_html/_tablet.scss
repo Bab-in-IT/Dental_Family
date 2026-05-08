@@ -1,0 +1,825 @@
+@media (min-width: 700px) and (max-width: 1170px) {
+    .center {
+        padding-left: calc(50% - 360px);
+        padding-right: calc(50% - 360px);
+    }
+
+    .header {
+        height: 90px;
+    }
+    
+    .logo__img {
+        width: 140px;
+        height: auto;
+    }
+
+    .menu {
+        padding-left: 34px;
+        gap: 14px;
+
+        &-link {
+            font-size: 13.5px;
+        }
+    }
+
+    .top {
+        &__content{
+            &-box {
+                width: auto;
+                height: 439px;
+                position: relative;
+            }
+        }
+
+        &__left {
+            margin-top: 15px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__description {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        &__img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 370px;
+        }
+    }
+
+    .tags {
+        &__title {
+            margin-top: 50px;
+            font-size: 32px;
+        }
+
+        &__content {
+            &-box {
+                flex-direction: column;
+            }
+        }
+
+        &__text {
+            width: auto;
+        }
+    }
+
+    .about-us {
+        height: auto;
+        padding-bottom: 50px;
+
+        &__content {
+            flex-direction: column;
+            width: auto;
+            align-items: center;
+        }
+
+        &__text {
+            width: auto;
+        }
+    }
+
+    .doctors {
+        height: 780px;
+
+        &__title {
+            padding-top: 70px;
+        }
+
+        &__content {
+            justify-content: flex-start;
+            width: auto;
+            gap: 30px;
+        }
+
+        &__slider_doc-page {
+            display: block;
+        }
+
+        &__people_doc-page {
+            overflow: hidden;
+            height: 558px;
+        }
+    }
+
+    .sale {
+        &__img-box {
+            display: none;
+        }
+
+        &__content {
+            width: inherit;    
+            padding: 0px 100px 0px 100px;
+        }
+
+        &__svg {
+            top: 44%;
+            right: 120px;
+        }
+    }
+
+    .feedback {
+        height: auto;
+
+        &__content {
+            width: auto;
+            flex-direction: column;
+            align-items: center;
+
+            &-left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &__title {
+            width: 548px;
+        }
+    }
+
+    .reviews {
+        height: auto;
+        padding-bottom: 100px;
+
+        &__title {
+            padding-top: 100px;
+        }
+
+        &__content {
+            overflow: hidden;
+            width: auto;
+        }
+
+        &__clients {
+            gap: 150px;
+            width: auto;
+        }
+
+        &__case {
+            width: 516px;
+        }
+    }
+
+    .footer {
+        &__name-big {
+            font-size: 100px;
+        }
+
+        &__name-small {
+            left: 15%;
+            bottom: 25px;
+        }
+    }
+
+    .contacts {
+        height: auto;
+
+        &__title {
+            font-size: 34px;
+        }
+
+        &__button {
+            gap: 5px;
+            padding: 5px;
+        }
+
+        &__map {
+            width: fit-content;
+        }
+
+        &__content {
+            width: auto;
+            flex-direction: column;
+            padding-bottom: 20px;
+            align-items: center;
+        }
+    }
+
+    .padding {
+        height: 50px;
+    }
+
+    .service {
+        height: 5200px;
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: auto;  
+            height: 527px;   
+        }
+
+        &__button {
+            display: none;
+
+            &_mob {
+                display: flex;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .kids {
+        &-top {
+            height: 1100px;
+            flex-direction: column;
+            gap: 35px;
+
+            &__description-box {
+                column-gap: 0;
+            }
+
+            &__right {
+                display: flex;
+                justify-content: center;
+                width: auto;
+            }
+
+            &__img {
+                position: inherit;
+
+                &-shadow {
+                    height: 510px;
+                    bottom: -24px;
+                    right: 163px;
+                }
+            }
+        }
+
+        &-service {
+            height: auto;
+            
+            &__content-box {
+                width: auto;
+                height: auto;
+                grid-template-columns: repeat(3, 240px);
+            } 
+            
+            &__content {
+                width: 240px;
+                height: 168px;
+
+                &-title {
+                    font-size: 21px;
+                }
+            }
+
+            &__img {
+                width: 240px;
+            }
+        }
+    }
+
+    .for-whom {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__content {
+            width: 550px;
+
+            &-box {
+                height: auto;
+            }
+
+            &-up, &-down {
+                flex-direction: column;
+                gap: 27px;
+            }
+
+            &-text, &-title {
+                width: 448px;
+            }
+        }
+    }
+
+    .advantages {
+        height: auto;
+
+        &__title {
+            padding-top: 50px;
+        }
+
+        &__img_small {
+        display: none;
+        }
+
+        &__peculiarities-text {
+            width: 422px;
+        }
+
+        &__content-down img {
+            width: 70%;
+            height: 70%;
+        }
+    }
+    
+    .differences {
+        padding-bottom: 40px;
+
+        &__content-box {
+            width: auto;
+        }
+
+        &__content-up, &__content-down {
+            gap: 28px;
+            justify-content: center;
+        }
+    }
+
+    .stages {
+        height: auto;
+        padding-bottom: 40px;
+
+        &__content {
+            height: auto;
+            gap: 20px;
+            align-items: center;
+
+            &-box {
+                height: auto;
+            }
+        }
+
+        &__img {
+            height: fit-content;
+        }
+    }
+
+    .question {
+        &__content, &__text {
+            width: 650px;
+        }
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1170px) {
+    .center {
+        padding-left: calc(50% - 450px);
+        padding-right: calc(50% - 450px);
+    }
+
+    .menu {
+        gap: 24px;
+        padding-left: 47px;
+    }
+
+    .top__img {            
+        right: -46px;
+    }
+
+    .top__left {
+        margin-top: 75px;
+    }
+    
+
+    .tags__title {
+        margin-top: 70px;
+    }      
+
+    .doctors__content {
+        gap: 37px;
+    }
+    
+    .sale {
+        justify-content: flex-start;
+
+        &__img-box {
+            display: block;
+        }
+
+        &__content {
+            padding: 0px 85px 0px 10px;
+
+            &-box {
+                padding: 0;
+            }
+        }
+
+        &__title {
+            margin-top: 110px;
+        }
+
+        &__description {
+            width: 410px;
+        }
+
+        &__condition {
+            width: 410px;
+        }
+
+        &__svg {
+            right: 432px;
+        }
+    }
+
+    .feedback {
+        height: 524px;
+
+        &__content-left {
+            width: 557px;
+            display: block;
+        }  
+        
+        &__title {
+            width: 600px;
+            padding-left: 10px;
+        }
+
+        &__content {
+            position: relative;
+            width: 1440px;
+            flex-direction: row;
+            align-items: normal;
+        }
+
+        &__img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        &__form {
+            width: 530px;
+            margin-left: 10px;
+        }
+
+        &__input, &__button {
+            padding-right: 12px;
+            width: 500px;
+        }
+    }
+
+    .reviews {
+        &__content {
+            overflow: inherit;
+            gap: 25px;
+        }
+
+        &__clients {
+            gap: 30px;
+        }
+
+        &__case {
+            width: 340px;
+        }
+
+        &__date {
+            bottom: 20px;
+        }
+    }
+
+    .footer__name-small {
+        left: 21%;
+    }
+
+    .service {
+        height: 3246px;
+
+        &__content {
+            display: flex;
+            height: 307px;
+        }
+
+        &__button {
+            display: flex;
+
+            &_mob {
+                display: none;
+            }
+        }
+    }
+
+    .kids-top {
+        align-items: center;
+
+        &__description-box{
+            column-gap: 20px;
+        }
+
+        &__img-shadow {
+            right: -30px;
+        }
+    }
+
+    .for-whom {
+        &__title {
+            text-align: left;
+        }
+
+        &__content {
+            width: 315px;
+            height: 190px;
+
+            &-up, &-down {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            &-text, &-title {
+                width: 250px;
+            }
+
+            &_big {
+                width: 482px;
+            }
+
+            &-text_big, &-title_big {
+                width: 350px;
+            }
+        }
+    }
+
+    .advantages {
+        padding-bottom: 50px;
+
+        &__title {
+            padding-top: 50px;
+        }
+
+        &__img_small {
+        display: none;
+        }
+
+        &__peculiarities-text {
+            width: 579px;
+        }
+
+        &__content-down img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .differences__title {
+        text-align: center;
+    }
+
+    .differences__content-up, .differences__content-down {
+        gap: 60px;
+    }
+
+    .kids-service {
+        &__content-box {
+            grid-template-columns: repeat(3, 300px);
+        } 
+            
+        &__content {
+            width: 300px;
+            height: 210px;
+
+            &-title {
+                font-size: 22px;
+            }
+        }
+
+        &__img {
+            width: 300px;
+        }
+    }
+
+    .question {
+        &__content, &__text {
+            width: 830px;
+        }
+    }
+
+    .tax-deduction {
+        padding-top: 30px;
+        padding-bottom: 60px;
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+
+        &__section {
+            padding: 24px;
+        }
+
+        &__section-title {
+            font-size: 22px;
+        }
+
+        &__documents {
+            &-title {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .payment-application {
+        padding-top: 30px;
+        padding-bottom: 60px;
+
+        &__document {
+            padding: 36px 32px;
+        }
+
+        &__personal-info {
+            font-size: 12px;
+            margin-bottom: 22px;
+            max-width: 420px;
+
+            .payment-application__field-group {
+                margin-bottom: 1px;
+            }
+
+            .payment-application__label {
+                font-size: 12px;
+                min-width: 160px;
+            }
+
+            .payment-application__note {
+                font-size: 10px;
+                margin-top: -1px;
+                margin-bottom: 2px;
+            }
+
+            .payment-application__underline {
+                min-width: 180px;
+                font-size: 10px;
+                height: 13px;
+            }
+
+            p.payment-application__label {
+                font-size: 12px;
+            }
+        }
+
+        &__title {
+            font-size: 22px;
+            margin-top: 28px;
+            margin-bottom: 22px;
+        }
+
+        &__field {
+            gap: 10px;
+        }
+
+        &__label {
+            font-size: 15px;
+        }
+
+        &__underline {
+            min-width: 160px;
+        }
+
+        &__note {
+            font-size: 13px;
+
+            &-right {
+                margin-top: -6px;
+            }
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+
+        &__signature {
+            margin-top: 40px;
+        }
+    }
+
+    .privacy-policy {
+        padding-top: 30px;
+        padding-bottom: 60px;
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+
+        &__section {
+            padding: 24px;
+        }
+
+        &__section-title {
+            font-size: 22px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+
+        &__list {
+            &-item {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .warranty-policy {
+        padding-top: 30px;
+        padding-bottom: 60px;
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+
+        &__section {
+            padding: 24px;
+        }
+
+        &__section-title {
+            font-size: 22px;
+        }
+
+        &__subsection-title {
+            font-size: 19px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+
+        &__table {
+            font-size: 13px;
+
+            th {
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            td {
+                font-size: 13px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .rules-policy {
+        padding-top: 30px;
+        padding-bottom: 60px;
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+
+        &__section {
+            padding: 24px;
+        }
+
+        &__greeting {
+            font-size: 19px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+
+        &__list {
+            &-item {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .agreement-policy {
+        padding-top: 30px;
+        padding-bottom: 60px;
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+
+        &__section {
+            padding: 24px;
+        }
+
+        &__section-title {
+            font-size: 22px;
+        }
+
+        &__subsection-title {
+            font-size: 19px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+
+        &__list {
+            &-item {
+                font-size: 15px;
+            }
+        }
+    }
+}

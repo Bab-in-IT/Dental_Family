@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявление на получение справки — Дентал Фэмили</title>
+    <meta name="description" content="Заявление о выдаче справки об оплате медицинских услуг в стоматологии Дентал Фэмили">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header center">
+        <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+        <nav class="menu">
+            <a class="menu-link" href="index.html">Главная</a>
+            <a class="menu-link" href="service.html">Сервис</a>
+            <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="menu-link" href="doctors.html">Специалисты</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+            <a class="menu-link" href="#">Вакансии</a>
+        </nav>
+    </header>
+    <header class="header header_mob header_mob-back-tax">
+        <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+        <img class="header__menu-mob" src="img/mobil/menu_mob.svg" alt="меню" onclick="menu()">
+        <nav class="menu menu_mob">
+            <a class="menu-link" href="index.html">Главная</a>
+            <a class="menu-link" href="service.html">Сервис</a>
+            <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="menu-link" href="doctors.html">Специалисты</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+            <a class="menu-link" href="#">Вакансии</a>
+        </nav>
+    </header>
+    <div class="payment-application center">
+        <div class="payment-application__document">
+            <div class="payment-application__personal-info">
+                <div class="payment-application__field-group">
+                    <div class="payment-application__field">
+                        <span class="payment-application__label">от</span>
+                        <span class="payment-application__underline">______________________________________________</span>
+                    </div>
+                    <p class="payment-application__note">(фамилия, имя, отчество заявителя полностью)</p>
+                </div>
+
+                <div class="payment-application__field-group">
+                    <div class="payment-application__field">
+                        <span class="payment-application__label">Дата рождения</span>
+                        <span class="payment-application__underline">________________________________</span>
+                    </div>
+                </div>
+
+                <div class="payment-application__field-group">
+                    <div class="payment-application__field">
+                        <span class="payment-application__label">ИНН</span>
+                        <span class="payment-application__underline">____________________________________</span>
+                    </div>
+                </div>
+
+                <div class="payment-application__field-group">
+                    <p class="payment-application__label">Документ, удостоверяющий личность:</p>
+                    <div class="payment-application__field">
+                        <span class="payment-application__underline">_________________________________________</span>
+                    </div>
+                    <div class="payment-application__field">
+                        <span class="payment-application__underline">_________________________________________</span>
+                    </div>
+                    <p class="payment-application__note">(серия и номер, кем и когда выдан)</p>
+                </div>
+
+                <div class="payment-application__field-group">
+                    <p class="payment-application__label">Адрес места жительства/регистрации:</p>
+                    <div class="payment-application__field">
+                        <span class="payment-application__underline">_________________________________________</span>
+                    </div>
+                </div>
+
+                <div class="payment-application__field-group">
+                    <div class="payment-application__field">
+                        <span class="payment-application__label">Контактный телефон</span>
+                        <span class="payment-application__underline">_______________________</span>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+
+            <h1 class="payment-application__title">Заявление о выдаче справки об оплате медицинских услуг (направлении сведений о расходах налогоплательщика в электронной форме)</h1>
+
+            <p class="payment-application__text">В соответствии с НК РФ прошу выдать мне справку об оплате медицинских услуг для предоставления в налоговые органы с целью получения социального налогового вычета либо при наличии технической возможности направить сведения о расходах за медицинские услуги в налоговый орган (нужное подчеркнуть)</p>
+
+            <p class="payment-application__text">Оплата была произведена мной за медицинские услуги, оказанные<span class="payment-application__underline">____________________</span></p>
+            <p class="payment-application__note payment-application__note-right">указать период оказания услуг</p>
+
+            <p class="payment-application__text">Услуги были оказаны<br>(выбрать нужное):</p>
+
+            <div class="payment-application__options">
+                <div class="payment-application__option">
+                    <span class="payment-application__checkbox">☐</span>
+                    <span class="payment-application__option-text">мне лично</span>
+                </div>
+
+                <div class="payment-application__option">
+                    <span class="payment-application__checkbox">☐</span>
+                    <span class="payment-application__option-text">моему супругу (супруге)</span>
+                    <span class="payment-application__underline">_____________________________________________________</span>
+                    <p class="payment-application__note payment-application__note-right">ФИО, дата рождения</p>
+                </div>
+
+                <div class="payment-application__option">
+                    <span class="payment-application__checkbox">☐</span>
+                    <span class="payment-application__option-text">моей матери (отцу)</span>
+                    <span class="payment-application__underline">__________________________________________________________</span>
+                    <p class="payment-application__note payment-application__note-right">ФИО, дата рождения</p>
+                </div>
+
+                <div class="payment-application__option">
+                    <span class="payment-application__checkbox">☐</span>
+                    <span class="payment-application__option-text">моему ребенку (детям),</span>
+                    <span class="payment-application__underline">_________________________________________</span>
+                    <span class="payment-application__underline">___________________________________________________________________________</span>
+                    <span class="payment-application__underline">____________________________________________________________________________________</span>
+                    <p class="payment-application__note payment-application__note-right">ФИО, дата рождения</p>
+                </div>
+            </div>
+
+            <p class="payment-application__text">Копии документов, подтверждающих степень родства прилагаю.</p>
+
+            <p class="payment-application__text">Способ выдачи справки (выделить нужное): лично заявителю по месту нахождения медицинской организации, направить по электронному адресу:<span class="payment-application__underline">__________________________________________</span></p>
+
+            <div class="payment-application__signature">
+                <div class="payment-application__date">
+                    <span>«</span>
+                    <span class="payment-application__underline">      </span>
+                    <span>»</span>
+                    <span class="payment-application__underline">                </span>
+                    <span>20</span>
+                    <span class="payment-application__underline">     </span>
+                    <span>г.</span>
+                </div>
+                <div class="payment-application__signature-line">
+                    <span>/</span>
+                    <span class="payment-application__underline">________________________</span>
+                    <span>/</span>
+                    <span class="payment-application__underline">_________________________________________</span>
+                </div>
+                <p class="payment-application__note payment-application__note-right">подпись заявителя ФИО заявителя</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="padding"></div>
+   <footer class="footer">
+        <div class="footer__content center">
+            <div class="footer__contacts-box">
+                <div class="footer__contacts">
+                    <h2 class="footer__title">Контакты</h2>
+                    <div class="footer__address">
+                        <p class="footer__text">Адрес: г. Чита, ул. Новобульварная, д. 24</p>
+                        <p class="footer__text">Телефон: +7 (3022) 284-286</p>
+                        <p class="footer__text">График работы: ежедневно с 09:00 до 21:00</p>
+                    </div>
+                </div>
+                <div class="footer__sign-up">
+                    <button class="footer__button" onclick="document.location='#sign_up'">Записаться<img
+                            src="img/button-footer.svg" alt="Кнопка записаться"></button>
+                    <p class="footer__text">Оставьте заявку, наш специалист перезвонит вам и ответит на все интересующие
+                        вопросы.</p>
+                </div>
+               
+            </div>
+            <div class="footer__rules-box">
+                <p class="footer__rules-title">Правовая информация</p>
+                <div class="footer__rules-list">
+                    <div class="footer__rules-column">
+                        <a class="footer__rules" href="rules.html">Правила использования сайта</a>
+                        <a class="footer__rules" href="agreement.html">Соглашение об использовании cookie</a>
+                        <a class="footer__rules" href="politic.html">Политика конфиденциальности</a>
+                        <a class="footer__rules" href="payment.html">Оплата и доставка</a>
+                        <a class="footer__rules" href="garancy.html">Гарантии и возврат</a>
+                    </div>
+                    <div class="footer__rules-column">
+                        <a class="footer__rules" href="tax_deduction.html">Налоговый вычет</a>
+                        <a class="footer__rules" href="ИНН.pdf" download>ИНН (PDF)</a>
+                        <a class="footer__rules" href="Л041-01124-75_00362555.pdf" download>Лицензия (PDF)</a>
+                        <a class="footer__rules" href="Прейскурант.xlsx" download>Прейскурант (Excel)</a>
+                        <a class="footer__rules" href="гарантия.pdf" download>Гарантия (PDF)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__name-clinic">
+                <p class="footer__name-big">Дэнтал Фемили</p>
+                <p class="footer__name-small">стоматология для всей семьи</p>
+            </div>
+        </div>
+        <nav class="footer__nav center">
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="footer__link" href="doctors.html">Специалисты</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

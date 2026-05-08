@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Налоговый вычет — Дентал Фэмили</title>
+    <meta name="description" content="Информация о налоговом вычете за лечение в стоматологии Дентал Фэмили">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header center">
+        <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+        <nav class="menu">
+            <a class="menu-link" href="index.html">Главная</a>
+            <a class="menu-link" href="service.html">Сервис</a>
+            <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="menu-link" href="doctors.html">Специалисты</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+            <a class="menu-link" href="#">Вакансии</a>
+        </nav>
+    </header>
+    <header class="header header_mob header_mob-back-tax">
+        <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+        <img class="header__menu-mob" src="img/mobil/menu_mob.svg" alt="меню" onclick="menu()">
+        <nav class="menu menu_mob">
+            <a class="menu-link" href="index.html">Главная</a>
+            <a class="menu-link" href="service.html">Сервис</a>
+            <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="menu-link" href="doctors.html">Специалисты</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+            <a class="menu-link" href="#">Вакансии</a>
+        </nav>
+    </header>
+    <div class="tax-deduction center">
+        <h1 class="tax-deduction__title">Налоговый вычет</h1>
+        
+        <section class="tax-deduction__section">
+            <h2 class="tax-deduction__section-title">Кто имеет право на получение вычета за лечение</h2>
+            <p class="tax-deduction__text">Физическое лицо, претендующее на получение налогового вычета, должно:</p>
+            <ul class="tax-deduction__list">
+                <li class="tax-deduction__list-item">быть официально трудоустроенным</li>
+                <li class="tax-deduction__list-item">лично оплатить расходы на лечение</li>
+            </ul>
+            <p class="tax-deduction__text">Вычет можно получить за лечение:</p>
+            <ul class="tax-deduction__list">
+                <li class="tax-deduction__list-item">детей (в том числе усыновленных) в возрасте до 18 лет (до 24 лет, если дети (в том числе усыновленные), являются обучающимися по очной форме обучения в организациях, осуществляющих образовательную деятельность), подопечным в возрасте до 18 лет</li>
+                <li class="tax-deduction__list-item">супруга (-и)</li>
+                <li class="tax-deduction__list-item">родителей</li>
+                <li class="tax-deduction__list-item">собственное лечение</li>
+            </ul>
+            <p class="tax-deduction__text">Таким образом, мед. учреждение предоставляет пациенту пакет документов, состоящий из:</p>
+            <ul class="tax-deduction__list">
+                <li class="tax-deduction__list-item">Справку (и) об оплате медицинских услуг</li>
+            </ul>
+            
+            <div class="tax-deduction__documents">
+                <div class="tax-deduction__documents-box">
+                    <h3 class="tax-deduction__documents-title">При оформлении справки на налоговый вычет за детей дополнительно предоставляются данные одного из следующих видов документов:</h3>
+                    <ul class="tax-deduction__list">
+                        <li class="tax-deduction__list-item">Свидетельства о рождении (до 14 лет)</li>
+                        <li class="tax-deduction__list-item">Паспорта (с 14 лет)</li>
+                        <li class="tax-deduction__list-item">ИНН</li>
+                    </ul>
+                </div>
+                
+                <div class="tax-deduction__documents-box">
+                    <h3 class="tax-deduction__documents-title">При оформлении справки на налоговый вычет за супруга (у) дополнительно предоставляются данные одного из документов:</h3>
+                    <ul class="tax-deduction__list">
+                        <li class="tax-deduction__list-item">Паспорта</li>
+                        <li class="tax-deduction__list-item">ИНН</li>
+                    </ul>
+                </div>
+                
+                <div class="tax-deduction__documents-box">
+                    <h3 class="tax-deduction__documents-title">При оформлении справки на налоговый вычет за родителей дополнительно предоставляются данные одного из документов:</h3>
+                    <ul class="tax-deduction__list">
+                        <li class="tax-deduction__list-item">Паспорта</li>
+                        <li class="tax-deduction__list-item">ИНН</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="tax-deduction__text">Налоговый вычет составляет 13% от расходов на лечение.</p>
+            <p class="tax-deduction__text">Налоговый вычет не может быть выше 150 тыс. рублей (по расходам, понесенным с 2024 года) и не выше 120 тыс. рублей (по расходам, понесенным до 2024 года)</p>
+            <ul class="tax-deduction__list">
+                <li class="tax-deduction__list-item">То есть 150 тысяч можно получить только начиная с 2024 года, если мед. услуга не относится к дорогостоящей.</li>
+                <li class="tax-deduction__list-item">Вычет можно получить со всей суммы расходов, только если лечение дорогостоящее, но не может быть выше, чем уплаченный за год налог.</li>
+            </ul>
+            
+            <p class="tax-deduction__text">В данный момент возврат можно оформить за три предшествующих года: 2023, 2024, 2025 (за 2026 год можно заказать справку за лечение для работодателя)</p>
+            <ul class="tax-deduction__list">
+                <li class="tax-deduction__list-item">Обращаем ваше внимание, что в связи с изменением законодательства, справка на налоговый вычет за 2024 и 2025 год, в соответствии с приказом ФНС России от 08.11.2023 № ЕА-7-11/824, будет направлена в ИФНС медицинской организацией самостоятельно, после заполнения вами запроса на сайте компании.</li>
+                <li class="tax-deduction__list-item">Ссылка на приказ: <a href="https://www.nalog.gov.ru/rn77/about_fts/docs/14112883/" target="_blank" class="tax-deduction__link">https://www.nalog.gov.ru/rn77/about_fts/docs/14112883/</a></li>
+                <li class="tax-deduction__list-item">Справка представляется в ИФНС в электронном формате в течении 30 дней с даты подачи вами заявления на налоговый вычет на сайте компании.</li>
+                <li class="tax-deduction__list-item">Справка с 2024 года заменяет собой все документы, которые подтверждают право на социальный вычет: договор, платежные документы, лицензию.</li>
+                <li class="tax-deduction__list-item">Справки по расходам за 2023 год направляются на электронную почту клиента медицинскими организациями в форме PDF документа.</li>
+            </ul>
+            
+            <p class="tax-deduction__text">Для получения справки нужно заполнить заявление ниже.</p>
+        </section>
+    </div>
+    
+    <div class="padding"></div>
+    <footer class="footer">
+        <div class="footer__content center">
+            <div class="footer__contacts-box">
+                <div class="footer__contacts">
+                    <h2 class="footer__title">Контакты</h2>
+                    <div class="footer__address">
+                        <p class="footer__text">Адрес: г. Чита, ул. Новобульварная, д. 24</p>
+                        <p class="footer__text">Телефон: +7 (3022) 284-286</p>
+                        <p class="footer__text">График работы: ежедневно с 09:00 до 21:00</p>
+                    </div>
+                </div>
+                <div class="footer__sign-up">
+                    <button class="footer__button" onclick="document.location='#sign_up'">Записаться<img
+                            src="img/button-footer.svg" alt="Кнопка записаться"></button>
+                    <p class="footer__text">Оставьте заявку, наш специалист перезвонит вам и ответит на все интересующие
+                        вопросы.</p>
+                </div>
+               
+            </div>
+            <div class="footer__rules-box">
+                <p class="footer__rules-title">Правовая информация</p>
+                <div class="footer__rules-list">
+                    <div class="footer__rules-column">
+                        <a class="footer__rules" href="rules.html">Правила использования сайта</a>
+                        <a class="footer__rules" href="agreement.html">Соглашение об использовании cookie</a>
+                        <a class="footer__rules" href="politic.html">Политика конфиденциальности</a>
+                        <a class="footer__rules" href="payment.html">Оплата и доставка</a>
+                        <a class="footer__rules" href="garancy.html">Гарантии и возврат</a>
+                    </div>
+                    <div class="footer__rules-column">
+                        <a class="footer__rules" href="tax_deduction.html">Налоговый вычет</a>
+                        <a class="footer__rules" href="ИНН.pdf" download>ИНН (PDF)</a>
+                        <a class="footer__rules" href="Л041-01124-75_00362555.pdf" download>Лицензия (PDF)</a>
+                        <a class="footer__rules" href="Прейскурант.xlsx" download>Прейскурант (Excel)</a>
+                        <a class="footer__rules" href="гарантия.pdf" download>Гарантия (PDF)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__name-clinic">
+                <p class="footer__name-big">Дэнтал Фемили</p>
+                <p class="footer__name-small">стоматология для всей семьи</p>
+            </div>
+        </div>
+        <nav class="footer__nav center">
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="footer__link" href="doctors.html">Специалисты</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

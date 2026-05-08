@@ -1,0 +1,17 @@
+RewriteEngine On
+
+
+RewriteCond %{THE_REQUEST} ^GET\s/+index\.html\sHTTP
+RewriteRule ^index\.html$ / [R=301,L]
+
+
+# Исключаем существующие файлы и директории из перезаписи
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Удаляем .html из URL (для запросов без расширения)
+RewriteRule ^([^.]+)$ $1.html [L]
+
+# Редирект с .html на чистый URL (чтобы избежать дублирования контента)
+RewriteCond %{THE_REQUEST} \s/+(.*?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]

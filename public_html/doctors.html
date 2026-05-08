@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дентал Фэмили — стоматология для всей семьи</title>
+    <meta name="description" content="Описание страницы">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header center">
+        <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+        <nav class="menu">
+            <a class="menu-link" href="index.html">Главная</a>
+            <a class="menu-link" href="service.html">Сервис</a>
+            <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="menu-link menu-link_now" href="doctors.html">Специалисты</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+            <a class="menu-link" href="#">Вакансии</a>
+        </nav>
+    </header>
+    <header class="header header_mob center">
+        <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+        <img class="header__menu-mob" src="img/mobil/menu_mob.svg" alt="меню" onclick="menu()">
+        <nav class="menu menu_mob">
+            <a class="menu-link" href="index.html">Главная</a>
+            <a class="menu-link" href="service.html">Сервис</a>
+            <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="menu-link menu-link_now" href="doctors.html">Специалисты</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+            <a class="menu-link" href="#">Вакансии</a>
+        </nav>
+    </header>
+    <div class="doctors doctors_doc-page center">
+        <h2 class="doctors__title doctors__title_doc-page">Специалисты</h2>
+        <div class="doctors__content">
+            <img class="doctors__slider doctors__slider_doc-page doctors__slider_mob" src="img/doc_slider-back.png"
+                alt="кнопка назад" id="doc-prev">
+            <div class="doctors__people doctors__people_doc-page">
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/lopatin.jpg" alt="Лопатин С.Б.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name">Сергей Борисович <br> Лопатин </p>
+                            <p class="doctors__speciality">Врач стоматолог-ортопед
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/batoina.jpg" alt="Батоина А. В.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name doctors__name_long">Анастасия Владиславовна Батоина</p>
+                            <p class="doctors__speciality">Врач стоматолог
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/belyakov.jpg" alt="Беляков И. В.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name">Игорь Владимирович Беляков</p>
+                            <p class="doctors__speciality">Врач стоматолог-хирург-ортопед
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/osnickaya.jpg" alt="Осницкая М.В.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name">Марина Валерьевна Осницкая </p>
+                            <p class="doctors__speciality">Врач стоматолог-терапевт
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/asatryan.jpg" alt="Асатрян А.А.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name">Артем Арамович <br> Асатрян</p>
+                            <p class="doctors__speciality">Врач стоматолог
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/batoin.jpg" alt="Батоин Ч.З.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name">Чингс Зоритгуевич <br> Батоин</p>
+                            <p class="doctors__speciality">Врач детский стоматолог
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/vaulin.jpg" alt="Ваулин В.В.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name">Вадим Владимирович <br> Ваулин </p>
+                            <p class="doctors__speciality">Врач стоматолог-хирург
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/krylova.jpg" alt="Крылова А.В.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name">Анна Владимировна <br> Крылова</p>
+                            <p class="doctors__speciality">Врач стоматолог
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/mungalov.jpg" alt="Мунгалов Д.А.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name">Даниил Александрович <br> Мунгалов</p>
+                            <p class="doctors__speciality">Врач стоматолог-хирург
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/kuznecova.jpg" alt="Кузнецова А.А.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name doctors__name_long">Александра Алексеевна <br> Кузнецова</p>
+                            <p class="doctors__speciality">Врач стоматолог
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+                <div class="doctors__case">
+                    <img class="doctors__photo" src="img/doctors/melnikov.jpg" alt="Мельников Е.О.">
+                    <div class="doctors__case-down">
+                        <div class="doctors__name-box">
+                            <p class="doctors__name"> Егор Олегович <br> Мельников</p>
+                            <p class="doctors__speciality">Врач стоматолог
+                            <p>
+                        </div>
+                        <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на
+                            приём</button>
+                    </div>
+                </div>
+            </div>
+            <img class="doctors__slider doctors__slider_doc-page" src="img/doc_slider-forward.png" alt="кнопка вперед"
+                id="doc-next">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__content center">
+            <div class="footer__contacts-box">
+                <div class="footer__contacts">
+                    <h2 class="footer__title">Контакты</h2>
+                    <div class="footer__address">
+                        <p class="footer__text">Адрес: г. Чита, ул. Новобульварная, д. 24</p>
+                        <p class="footer__text">Телефон: +7 (3022) 284-286</p>
+                        <p class="footer__text">График работы: ежедневно с 09:00 до 21:00</p>
+                    </div>
+                </div>
+                <div class="footer__sign-up">
+                    <button class="footer__button" onclick="document.location='#sign_up'">Записаться<img
+                            src="img/button-footer.svg" alt="Кнопка записаться"></button>
+                    <p class="footer__text">Оставьте заявку, наш специалист перезвонит вам и ответит на все интересующие
+                        вопросы.</p>
+                </div>
+            </div>
+            <div class="footer__name-clinic">
+                <p class="footer__name-big">Дэнтал Фемили</p>
+                <p class="footer__name-small">стоматология для всей семьи</p>
+            </div>
+        </div>
+        <nav class="footer__nav center">
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="footer__link" href="doctors.html">Специалисты</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>

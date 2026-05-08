@@ -1,0 +1,70 @@
+<?php
+$settings_id = get_settings_page_id();
+$template_url = get_template_directory_uri();
+
+// Текстовые поля
+$address  = get_field('footer_address', $settings_id) ?: 'г. Чита, ул. Новобульварная, д. 24';
+$phone    = get_field('footer_phone', $settings_id) ?: '+7 (3022) 284-286';
+$schedule = get_field('footer_schedule', $settings_id) ?: 'ежедневно с 09:00 до 21:00';
+
+// Файлы (в ACF выбери Return Format: URL)
+$inn_file = get_field('footer_inn_file', $settings_id) ?: $template_url . '/assets/docs/INN.pdf';
+$license_file = get_field('footer_license_file', $settings_id) ?: $template_url . '/assets/docs/license.pdf';
+?>
+
+<footer class="footer">
+    <div class="footer__content center">
+        <div class="footer__contacts-box">
+            <div class="footer__contacts">
+                <h2 class="footer__title">Контакты</h2>
+                <div class="footer__address">
+                    <p class="footer__text">Адрес: <?php echo esc_html($address); ?></p>
+                    <p class="footer__text">Телефон: 
+                        <a href="tel:<?php echo preg_replace('/[^0-9+]/', '', $phone); ?>">
+                            <?php echo esc_html($phone); ?>
+                        </a>
+                    </p>
+                    <p class="footer__text">График работы: <?php echo esc_html($schedule); ?></p>
+                </div>
+            </div>
+            
+            <div class="footer__sign-up">
+                <button class="footer__button" onclick="document.location='#sign_up'">
+                    Записаться
+                    <?php 
+                    render_image('footer_button_icon', '/assets/img/button-footer.svg', 'Иконка', '', $settings_id); 
+                    ?>
+                </button>
+                <p class="footer__text">Оставьте заявку, наш специалист перезвонит вам...</p>
+            </div>
+        </div>
+
+        <div class="footer__rules-box">
+            <p class="footer__rules-title">Правовая информация</p>
+            <div class="footer__rules-list">
+                <div class="footer__rules-column">
+                    <!-- Используй get_permalink(id_страницы), если знаешь ID, или просто home_url -->
+                    <a class="footer__rules" href="<?php echo home_url('/rules/'); ?>">Правила использования</a>
+                    <a class="footer__rules" href="<?php echo home_url('/politic/'); ?>">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__rules-column">
+                    <!-- Ссылки на файлы теперь динамические -->
+                    <a class="footer__rules" href="<?php echo esc_url($inn_file); ?>" download>ИНН (PDF)</a>
+                    <a class="footer__rules" href="<?php echo esc_url($license_file); ?>" download>Лицензия (PDF)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__name-clinic">
+            <p class="footer__name-big">Дентал Фэмили</p>
+            <p class="footer__name-small">стоматология для всей семьи</p>
+        </div>
+    </div>
+
+    <nav class="footer__nav center">
+        <a class="footer__link" href="<?php echo home_url('/'); ?>">Главная</a>
+        <a class="footer__link" href="<?php echo home_url('/doctors/'); ?>">Специалисты</a>
+    </nav>
+</footer>
+
+<?php wp_footer(); ?>
