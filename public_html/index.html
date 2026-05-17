@@ -10,10 +10,15 @@
 </head>
 
 <body>
-    <div class="top center">
-        <header class="header header_main">
-            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
-            <nav class="menu">
+
+    <header class="header header_main">
+        <div class="container">
+            <a class="logo" href="index.html" alt="Ссылка на шлавную страницу">
+                <svg class="header__logo" width="190" height="89" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <nav class="heder__nav">
                 <a class="menu-link menu-link_now" href="index.html">Главная</a>
                 <a class="menu-link" href="service.html">Сервис</a>
                 <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
@@ -21,19 +26,14 @@
                 <a class="menu-link" href="contacts.html">Контакты</a>
                 <a class="menu-link" href="#">Вакансии</a>
             </nav>
-        </header>
-        <header class="header header_mob header_mob-main">
-            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
-            <img class="header__menu-mob" src="img/mobil/menu_mob.svg" alt="меню" onclick="menu()">
-            <nav class="menu menu_mob">
-                <a class="menu-link menu-link_now" href="index.html">Главная</a>
-                <a class="menu-link" href="service.html">Сервис</a>
-                <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
-                <a class="menu-link" href="doctors.html">Специалисты</a>
-                <a class="menu-link" href="contacts.html">Контакты</a>
-                <a class="menu-link" href="#">Вакансии</a>
-            </nav>
-        </header>
+            <svg class="header__logo" width="190" height="89" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-logo"></use>
+            </svg>
+            <img class="header__menu-mob" src="images/mobil/menu_mob.svg" alt="меню" onclick="menu()">
+        </div>
+    </header>
+
+    <main>
         <section class="top__content">
             <div class="top__content-box">
                 <div class="top__left">
@@ -47,7 +47,10 @@
                 </div>
             </div>
         </section>
-    </div>
+
+    </main>
+
+
     <div class="tags center">
         <h2 class="tags__title">Почему выбирают именно нас?</h2>
         <div class="tags__content-box">
