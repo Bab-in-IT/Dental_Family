@@ -11,39 +11,51 @@
 
 <body>
 
-    <header class="header header_main">
+    <header class="header">
         <div class="container">
-            <a class="logo" href="index.html" alt="Ссылка на шлавную страницу">
-                <svg class="header__logo" width="190" height="89" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-logo"></use>
-                </svg>
-            </a>
-            <nav class="heder__nav">
-                <a class="menu-link menu-link_now" href="index.html">Главная</a>
-                <a class="menu-link" href="service.html">Сервис</a>
-                <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
-                <a class="menu-link" href="doctors.html">Специалисты</a>
-                <a class="menu-link" href="contacts.html">Контакты</a>
-                <a class="menu-link" href="#">Вакансии</a>
-            </nav>
-            <svg class="header__logo" width="190" height="89" aria-hidden="true">
-                <use xlink:href="images/sprite.svg#icon-logo"></use>
-            </svg>
-            <img class="header__menu-mob" src="images/mobil/menu_mob.svg" alt="меню" onclick="menu()">
+            <div class="header__wrapper">
+                <a class="logo" href="index.html" alt="Ссылка на шлавную страницу">
+                    <svg class="header__logo" width="190" height="89" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <nav class="header__nav">
+                    <a class="header__nav-link" href="index.html">Главная</a>
+                    <a class="header__nav-link" href="service.html">Сервис</a>
+                    <a class="header__nav-link" href="pediatric_dentistry.html">Детская стоматология</a>
+                    <a class="header__nav-link" href="doctors.html">Специалисты</a>
+                    <a class="header__nav-link" href="contacts.html">Контакты</a>
+                    <a class="header__nav-link" href="#">Вакансии</a>
+                </nav>
+                <button class="header__burger" type="button" aria-label="Кнопка открытия меню" onclick="menu()">
+                    <svg width="40" height="40" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="top__content">
-            <div class="top__content-box">
-                <div class="top__left">
-                    <h1 class="top__title">Дентал Фэмили — где лечатся всей семьёй</h1>
-                    <p class="top__description">Заботимся о вашей улыбке с теплом и профессионализмом.</p>
-                    <button class="top__button" onclick="document.location='#sign_up'">Записаться<img
-                        class="top__button-img" src="img/button-top.svg" alt="Кнопка записаться"></button>
-                </div>
-                <div class="top__right">
-                    <img class="top__img" src="img/top_img.svg" alt="счастливая семья">
+        <section class="hero">
+            <div class="container">
+
+
+                <div class="hero__wrapper">
+                    <div class="hero__left">
+                        <h1 class="hero__title">Дентал Фэмили — где лечатся всей семьёй</h1>
+                        <p class="hero__slogan">Заботимся о вашей улыбке с теплом и профессионализмом.</p>
+                        <button class="hero__button btn btn--hero-join" onclick="document.location='#sign_up'">
+                            <span>Записаться</span>
+
+                            <svg width="30" height="30" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-tooth"></use>
+                            </svg>
+                       </button>
+                    </div>
+                    <div class="hero__right">
+                        <img class="hero__img" src="img/top_img.svg" alt="счастливая семья">
+                    </div>
                 </div>
             </div>
         </section>

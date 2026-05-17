@@ -1,3 +1,5 @@
+/* Global */
+/* ------------------------------------ */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
   ========================================================================== */
@@ -361,7 +363,7 @@ a {
 }
 
 .container {
-  max-width: 1254px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -376,4 +378,34 @@ a {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+/* Blocks */
+/* ------------------------------------ */
+.header {
+  background-color: #f3faf9;
+  padding: 15px 0;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+.header__nav-link {
+  color: #5c5c5c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header__burger {
+    display: block;
+  }
 }
