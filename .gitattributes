@@ -1,0 +1,32 @@
+# Автоматически определять текстовые файлы и конвертировать окончания строк
+* text=auto
+
+# Явно указать текстовые форматы — для надёжности
+*.css text
+*.scss text
+*.html text
+*.php text
+*.js text
+*.json text
+*.txt text
+*.md text
+
+# Бинарные файлы — не конвертировать
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+*.exe binary
+
+# Специфичные настройки для конфигурационных файлов
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Файлы с фиксированным форматом (не конвертировать)
+*.lock binary
+package-lock.json binary
+yarn.lock binary
